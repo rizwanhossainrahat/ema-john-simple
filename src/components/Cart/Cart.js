@@ -19,17 +19,17 @@ const Cart = (props) => {
     else if(total>0){
         shipping=12.99;
     }
-    const tax=total/10;
-    const formatNumber=(num)=>{
-        const precision=num.tofixed(2)
-        return Number(precision);
-    }
+    // const tax=total/10.toFixed(2);
+    // const formatNumber=(num)=>{
+    //     const precision=num.tofixed(2)
+    //     return Number(precision);
+    // }
     return (
         <div>
             <h4>Order summary</h4>
             <p>Ordered items:{cart.length}</p>
-            <p>product price:{formatNumber(total)}</p>
-            <p>tax:{tax}</p>
+            <p>product price:{total}</p>
+            {/* <p>tax:{tax}</p> */}
             <p><small>shipping cost:{shipping}</small></p>
             <p>total price:{total+shipping}</p>
         </div>
