@@ -1,3 +1,11 @@
+.search-container{
+    background-color: rgba(0, 0, 0, 0.808);
+    text-align: center;
+    line-height: 40px;
+}
+.search-container input{
+    width: 60%;
+}
 .shop-container{
     display: flex;
 }
